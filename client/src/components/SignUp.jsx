@@ -28,8 +28,19 @@ function SignUp() {
                 <i className="user icon" />
                 <input
                   type="text"
-                  name="email"
-                  placeholder="E-mail address"
+                  name="name"
+                  placeholder="Name:"
+                />
+              </div>
+            </div>
+
+            <div className="field">
+              <div className="ui left icon input">
+                <i className="user outline icon" />
+                <input
+                  type="text"
+                  name="surname"
+                  placeholder="Surname"
                 />
               </div>
             </div>
@@ -45,7 +56,17 @@ function SignUp() {
             </div>
             <div className="field">
               <div className="ui left icon input">
-                <i className="user icon" />
+                <i className="lock icon" />
+                <input
+                  type="password"
+                  name="rewritePassword"
+                  placeholder="Rewrite password"
+                />
+              </div>
+            </div>
+            <div className="field">
+              <div className="ui left icon input">
+                <i className="mail icon" />
                 <input
                   type="text"
                   name="email"
@@ -55,11 +76,11 @@ function SignUp() {
             </div>
             <div className="field">
               <div className="ui left icon input">
-                <i className="user icon" />
+                <i className="home icon" />
                 <input
                   type="text"
-                  name="email"
-                  placeholder="E-mail address"
+                  name="city"
+                  placeholder="City"
                 />
               </div>
             </div>
