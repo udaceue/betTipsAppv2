@@ -290,4 +290,11 @@ select {
   .ui.six.column.centered.grid.tipsColumn > * {
     font-size: 1.5rem;
   }
+  
+}
+@media (max-width: 660px) {
+  .vipImg{
+    width: 50%;
+    height: 50%;
+  }
 }
