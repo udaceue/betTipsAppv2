@@ -28,9 +28,9 @@ function Menu() {
             Vip
             <i className="dropdown icon" />
             <div className="menu">
-              <a className="item">
+              <Link className="item" to = "/AboutVip">
                 <i className="info circle icon" /> About Vip
-              </a>
+              </Link>
               <a className="item">
                 <i className="plus square icon" /> Become a vip
               </a>
