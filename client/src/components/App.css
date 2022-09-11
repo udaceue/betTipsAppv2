@@ -1,0 +1,293 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181a1b;
+}
+
+/* ===============================================
+logo in menu + futbol icon on betTips component
+================================================ */
+img.ui.image.medium {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+div > .ui > header {
+  margin-top: 20px;
+}
+
+h1.ui.header.logoMargin {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: aliceblue;
+  padding: 0.9rem;
+}
+h1.ui.header.logoMargin .content .ui.sub.header {
+  color: aliceblue;
+}
+.ui.center.aligned.icon.header > .futbol.icon {
+  margin-top: 15px;
+  color: #a1aeb5;
+}
+.ui.center.aligned.icon.header > .content .sub.header {
+  color: aliceblue;
+}
+.ui.center.aligned.icon.header > .content {
+  color: aliceblue;
+}
+/* ================================================= */
+
+.ui.placeholder.segment {
+  background-color: #2b2e33;
+  border-radius: 20px;
+}
+
+/* =====================
+Login Page Styles
+===================== */
+.ui.stacked.segment {
+  background-color: #2b2e33;
+}
+.ui.left.icon input {
+  background-color: #6b7380;
+}
+.ui.fluid.large.teal.submit.button {
+  background-color: #4f4b66;
+}
+.ui.message {
+  background-color: #4f4b66;
+}
+
+.LoginHeader {
+  color: #a995f7;
+}
+.IntoYourAcc {
+  color: white;
+}
+/* ============================== */
+
+.ui.four.column.centered.grid.column {
+  margin-top: 30px;
+}
+figure {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0em;
+  padding: 0.1em;
+}
+.ui.image {
+  margin: auto;
+}
+.ui.fluid.container {
+  background-color: #181a1b;
+  color: #d8d4cf;
+}
+.ui.fluid.huge.teal.submit.button.restyled {
+  border-radius: 15px;
+  cursor: none;
+}
+.ui.fluid.huge.teal.submit.button.restyled:hover {
+  background-color: rgba(0, 181, 173, 0.9);
+}
+
+/* ================================
+Menu+our Team bars 
+================================ */
+
+/* ==============================
+links menu
+============================== */
+
+a:visited {
+  color: aliceblue;
+}
+.ui.menu .item {
+  color: white;
+}
+
+.vipMenu,
+.moreMenu {
+  display: flex;
+  align-items: center;
+}
+
+.ui.dividing.header {
+  background-color: #a1aeb5;
+  padding: 15px;
+}
+.ui.icon.header {
+  color: aliceblue;
+  opacity: 0.8;
+}
+.winningsimg {
+  width: 100%;
+}
+.winnings {
+  margin-bottom: 2.5rem;
+}
+
+.selectOptions {
+  height: 120px;
+}
+/* WHO WE ARE IN HOME SECTION */
+.ui.four.column.centered.grid.who > .column {
+  background-color: brown;
+}
+.ui.link.cards {
+  background-color: darkslategrey;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+
+.toolsContent {
+  margin-top: 2rem;
+}
+.ui.huge.header.textCenter {
+  color: #535399;
+}
+.textCenter {
+  text-align: center;
+}
+.fullwidth {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #3a444a;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 10px;
+}
+.ui.column.stroke {
+  border: 1.5px solid white;
+}
+i.icon.exchange.alternate {
+  margin-top: 10px;
+}
+
+.segmentSpace {
+  margin-bottom: 2rem;
+}
+.greenText {
+  background-color: rgb(26, 149, 55);
+}
+.loginLogo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.zIndex {
+  z-index: 5;
+}
+
+/* BET TIPS COLUMNS  */
+.country,
+.league {
+  background-color: #536169;
+}
+.homeTeam {
+  background-color: #686869;
+}
+.versus {
+  background-color: #181a1b;
+}
+.awayTeam {
+  background-color: #695a48;
+}
+.ourTip {
+  background-color: #1c1b19;
+}
+.ui.six.column.centered.grid.tipsColumn {
+  margin-top: 3rem;
+  margin-bottom: 15px;
+}
+
+.ui.fluid.container > .ui.six.column.centered.grid > * {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.ui.six.column.centered.grid.tipsColumn > * {
+  color: #e8981c;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+}
+
+/* dropdownMenu */
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: -5px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  background-color: #3a444a;
+  border: 3px solid #343240;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.test {
+  position: relative;
+}
+
+.clearFilters {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  padding: 5px;
+  background-color: darkorange;
+  opacity: 0.7;
+  color: black;
+  cursor: pointer;
+}
+
+.ui.column.league.hide,
+.ui.column.country.hide {
+  display: block;
+}
+
+/* ====================
+    MEDIA QUERIES
+==================== */
+
+@media (max-width: 1507px) {
+  .winningsimg {
+    width: 100%;
+  }
+
+  /* WHO WE ARE IN HOME SECTION */
+  .ui.four.column.centered.grid.who > .column {
+    flex-grow: 2;
+  }
+}
+@media (max-width: 1296px) {
+  .winnings {
+    flex-grow: 2;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 768px) {
+  .ui.column.country.hide,
+  .ui.column.league.hide {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ui.column.homeTeam,
+  .ui.column.awayTeam {
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: 660px) {
+  .ui.six.column.centered.grid.tipsColumn > * {
+    font-size: 1.5rem;
+  }
+}
