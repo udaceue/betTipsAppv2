@@ -8,6 +8,7 @@ import BetTips from "./components/BetTips";
 import Tools from "./components/Tools";
 import LoginPage from "./components/LoginPage";
 import SignUp from "./components/SignUp";
+import AboutVip from "./components/AboutVip";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,8 @@ root.render(
       <Route path="Tools" element={<Tools />} />
       <Route path="Login" element={<LoginPage />} />
       <Route path="SignUp" element={<SignUp />} />
+      <Route path="AboutVip" element={<AboutVip />} />
+
 
     </Routes>
   </BrowserRouter>
