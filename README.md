@@ -1,7 +1,7 @@
 # betTipsAppReshape
 
 # That's the only one project worth to recruiters attention. Currently I'm stopped front-end coding cause of learning backend in node/express/mariadb to finish entire project by myself.
-# https://github.com/udaceue/Bet-Tips-App.git <----main branch
+# https://github.com/udaceue/betTipsAppv2 <----main branch
 
 Newest version of project is located in main branch. I lost my entire progress on local and remote repo cause of mistake. To run project you need to install all dependencies in package.json
 
