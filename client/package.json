@@ -2,18 +2,22 @@
   "name": "bet-tips",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://udaceue.github.io/betTipsAppv2",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "build": "^0.1.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
     "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -21,6 +25,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "npm run lint -- --fix"
+
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +53,9 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "prettier": "^2.6.2"
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.6.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }
