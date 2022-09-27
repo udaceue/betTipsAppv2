@@ -1,12 +1,7 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/button-has-type */
-/* eslint-disable array-callback-return */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-console */
 import React, { useEffect, useState } from "react";
 
 function Tips(props) {
-  // eslint-disable-next-line no-unused-vars
+
   const { response, sorting } = props;
   const { events } = response;
 
@@ -21,9 +16,6 @@ function Tips(props) {
         : events
     );
   }, [sorting]);
-
-  // sorting == select option from
-  // DropdownFlags component
 
   return (
     <>

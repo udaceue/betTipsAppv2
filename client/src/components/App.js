@@ -1,12 +1,12 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import Home from "./Home";
+import Home from "../pages/Home";
 import Tipsters from "./Tipsters";
-import items from "./data";
+import items from "../data/data";
 import Header from "./Header";
-import Menu from "./Menu";
-import Scores from "./Scores";
+import Menu from "./MenuBar";
+import Scores from "../data/Scores";
 
 function App() {
   // eslint-disable-next-line no-unused-vars

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import HeaderUseage from "./HeaderUseage";
-import logo from "../photos/logo.png";
+import logo from "../assets/photos/logo.png";
 import { Link } from "react-router-dom";
 
 function LoginPage() {

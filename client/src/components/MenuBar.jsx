@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Menu() {
+function MenuBar() {
   return (
     <nav>
       <div className="ui attached stackable menu">
@@ -22,7 +22,7 @@ function Menu() {
             Tools
           </Link>
 
-          {/* VIP SECTION MENU */}
+     
           <div className="ui simple dropdown item">
             <i className="star icon" />
             Vip
@@ -40,7 +40,6 @@ function Menu() {
             </div>
           </div>
 
-          {/* DROPDOWN MORE MENU */}
           <div className="ui simple dropdown item">
             More
             <i className="dropdown icon" />
@@ -76,4 +75,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MenuBar;

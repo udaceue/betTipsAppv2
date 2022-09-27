@@ -1,6 +1,6 @@
 import React from 'react'
-import HeaderUseage from "./HeaderUseage";
-import vip from "../photos/vip.png"
+import HeaderUseage from "../components/HeaderUseage";
+import vip from "../assets/photos/vip.png"
 
 
 function AboutVip() {

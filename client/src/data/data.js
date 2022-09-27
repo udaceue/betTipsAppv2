@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import matthew from "../photos/matthew.png";
-import elyse from "../photos/elyse.png";
-import molly from "../photos/molly.png";
-import kristy from "../photos/kristy.png";
+import matthew from "../assets/photos/matthew.png";
+import elyse from "../assets/photos/elyse.png";
+import molly from "../assets/photos/molly.png";
+import kristy from "../assets/photos/kristy.png";
 
 const tipsters = [
   {

@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import Menu from "./Menu";
+import MenuBar from "./MenuBar";
 
 function BetTips() {
   return (
     <header>
       <Header />
-      <Menu />
+      <MenuBar />
     </header>
   );
 }

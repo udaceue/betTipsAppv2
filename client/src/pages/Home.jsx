@@ -1,12 +1,12 @@
 import React from "react";
-import winnings from "../photos/winnings.png";
+import winnings from "../assets/photos/winnings.png";
 
 function Home() {
   return (
     <div className="ui fluid container">
       <div>
         <section>
-          {/* Who we are section */}
+   
           <div className="ui four column centered grid who">
             <div className="column">
               <h2 className="ui icon header">
@@ -25,7 +25,7 @@ function Home() {
             </div>
           </div>
         </section>
-        {/* IMAGE SECTION */}
+
 
         <div className="ui three column centered grid">
           <div className="column winnings">

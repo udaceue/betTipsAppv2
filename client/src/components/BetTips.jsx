@@ -1,14 +1,11 @@
-/* eslint-disable react/self-closing-comp */
-// eslint-disable-next-line no-unused-vars
+
 import React, { useState } from "react";
 import HeaderUseage from "./HeaderUseage";
-// eslint-disable-next-line no-unused-vars
-import res from "./response.json";
+import res from "../data/response.json";
 import Tips from "./Tips";
 import DropdownFlags from "./DropdownFlags";
 
 function BetTips() {
-  // eslint-disable-next-line no-unused-vars
   const [response, setResponse] = useState(res);
   const [sortArg, setSortArg] = useState("All Leagues");
 

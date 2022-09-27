@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderUseage from "./HeaderUseage";
-import OddsConverter from "./OddsConverter";
-import RakeCalculator from "./RakeCalculator";
-import SureBet from "./SureBet";
+import HeaderUseage from "../components/HeaderUseage";
+import OddsConverter from "../components/OddsConverter";
+import RakeCalculator from "../components/RakeCalculator";
+import SureBet from "../components/SureBet";
 
 function Tools() {
   return (
