@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import DecimalOdds from "./DecimalOdds";
 import Propability from "./Propability";
+import ShowToolButton from "../ShowToolButton";
 
 function OddsConverter() {
   const [button, setButton] = useState("true");
@@ -30,12 +31,9 @@ function OddsConverter() {
                       Convert odds from one format to another and also to their
                       implied propability
                     </div>
-                    <button
-                      className="ui primary button"
-                      onClick={showComponent}
-                    >
-                      Show Tool
-                    </button>
+                  
+                  <ShowToolButton showComponent={showComponent}/>
+
                   </>
                 ) : (
                   <>

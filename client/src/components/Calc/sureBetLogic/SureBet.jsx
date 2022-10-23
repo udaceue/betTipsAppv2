@@ -1,9 +1,12 @@
 /* eslint-disable react/button-has-type */
 import { useState } from "react";
 import SureBetCalc from "./SureBetCalc";
+import ShowToolButton from "../ShowToolButton";
 
 function SureBet() {
   const [button, setButton] = useState("true");
+
+
 
   const showComponent = () => {
     setButton(!button);
@@ -27,12 +30,9 @@ function SureBet() {
                       Find out whether a bet is sure bet or not and also, how
                       much you should invest for maximum profit
                     </div>
-                    <button
-                      className="ui primary button"
-                      onClick={showComponent}
-                    >
-                      Show Tool
-                    </button>
+
+                    <ShowToolButton showComponent={showComponent}/>
+
                   </>
                 ) : (
                   <>
