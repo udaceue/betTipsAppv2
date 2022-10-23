@@ -50,8 +50,11 @@ function LoginPage() {
             <div className="ui error message" />
           </form>
           <div className="ui message">
-          New to us? 
-          <Link className="item" to="/SignUp"> Sign Up</Link>
+            New to us?
+            <Link className="item" to="/SignUp">
+              {" "}
+              Sign Up
+            </Link>
           </div>
         </div>
       </div>

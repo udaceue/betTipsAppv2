@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 function Tips(props) {
-
   const { response, sorting } = props;
   const { events } = response;
 
@@ -19,7 +18,7 @@ function Tips(props) {
 
   return (
     <>
-      <button className="clearFilters" onClick={props.ClearFilters}>
+      <button className="clearFilters" onClick={props.clearFilters}>
         Clear Filters
       </button>
 

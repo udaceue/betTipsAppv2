@@ -1,12 +1,10 @@
 /* eslint-disable react/button-has-type */
 import { useState } from "react";
 import SureBetCalc from "./SureBetCalc";
-import ShowToolButton from "../ShowToolButton";
+import ShowToolButton from "../calcUtils/ShowToolButton";
 
 function SureBet() {
   const [button, setButton] = useState("true");
-
-
 
   const showComponent = () => {
     setButton(!button);
@@ -24,16 +22,12 @@ function SureBet() {
             <div className="column">
               <div className="ui placeholder segment ">
                 {button ? (
-                  <>
-                    <div className="ui icon header">
-                      <i className="user secret icon" />
-                      Find out whether a bet is sure bet or not and also, how
-                      much you should invest for maximum profit
-                    </div>
-
-                    <ShowToolButton showComponent={showComponent}/>
-
-                  </>
+                  <ShowToolButton
+                    showComponent={showComponent}
+                    toolDescription={`Find out whether a bet is sure bet or not and also, how
+                      much you should invest for maximum profit`}
+                    icon={`user secret icon`}
+                  />
                 ) : (
                   <>
                     <SureBetCalc />

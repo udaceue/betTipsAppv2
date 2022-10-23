@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import { useState } from "react";
 import TwowayRake from "./TwowayRake";
-import ShowToolButton from "../ShowToolButton";
+import ShowToolButton from "../calcUtils/ShowToolButton";
 
 function RakeCalculator() {
   const [button, setButton] = useState("true");
@@ -22,16 +22,12 @@ function RakeCalculator() {
           <div className="column">
             <div className="ui placeholder segment ">
               {button ? (
-                <>
-                  <div className="ui icon header">
-                    <i className="percent icon" />
-                    Convert odds from one format to another and also to their
-                    implied propability
-                  </div>
-                  
-                  <ShowToolButton showComponent={showComponent}/>
-
-                </>
+                <ShowToolButton
+                  showComponent={showComponent}
+                  toolDescription={`Convert odds from one format to another and also to their implied
+                  propability`}
+                  icon={"percent icon"}
+                />
               ) : (
                 <>
                   <div>

@@ -22,13 +22,12 @@ function MenuBar() {
             Tools
           </Link>
 
-     
           <div className="ui simple dropdown item">
             <i className="star icon" />
             Vip
             <i className="dropdown icon" />
             <div className="menu">
-              <Link className="item" to = "/AboutVip">
+              <Link className="item" to="/AboutVip">
                 <i className="info circle icon" /> About Vip
               </Link>
               <a className="item">
