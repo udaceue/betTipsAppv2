@@ -1,18 +1,14 @@
-
 import React, { useState, useEffect } from "react";
 
 function DropdownFlags(props) {
   const { response } = props;
   const { events } = response;
 
-
   const { leagues, setLeagues } = useState;
-
 
   function requestLeagues() {
     fetch(leagues, {}).then((responsik) => {
       responsik.json().then((data) => {
-
         setLeagues(data);
       });
     });
@@ -45,9 +41,7 @@ function DropdownFlags(props) {
 
   const flagsTest = getOptionss();
 
- 
   const sortedArr = getOptions().sort();
-
 
   return (
     <div className="ui fluid container test">

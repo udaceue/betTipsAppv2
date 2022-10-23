@@ -6,7 +6,6 @@ function Home() {
     <div className="ui fluid container">
       <div>
         <section>
-   
           <div className="ui four column centered grid who">
             <div className="column">
               <h2 className="ui icon header">
@@ -25,7 +24,6 @@ function Home() {
             </div>
           </div>
         </section>
-
 
         <div className="ui three column centered grid">
           <div className="column winnings">
