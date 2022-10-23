@@ -5,8 +5,8 @@ import App from "./components/App";
 import Menu from "./components/MenuBar";
 import BetTips from "./components/BetTips";
 import Tools from "./pages/Tools";
-import LoginPage from "./components/LoginPage";
-import SignUp from "./components/SignUp";
+import LoginPage from "./pages/LoginPage";
+import SignUp from "./pages/SignUp";
 import AboutVip from "./pages/AboutVip";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -1,20 +1,23 @@
 /* eslint-disable react/button-has-type */
-import { useState } from "react";
-import SureBetCalc from "./sureBet/SureBetCalc";
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from "react";
+import DecimalOdds from "./DecimalOdds";
+import Propability from "./Propability";
 
-function SureBet() {
+function OddsConverter() {
   const [button, setButton] = useState("true");
 
   const showComponent = () => {
     setButton(!button);
   };
+
   return (
     <>
       <div className="ui container">
         <div className="ui equal width grid">
           <div className="column">
             {button && (
-              <div className="ui huge header textCenter">Sure Bet</div>
+              <div className="ui huge header textCenter">Odds Converter</div>
             )}
           </div>
           <div className="equal width row segmentSpace">
@@ -23,9 +26,9 @@ function SureBet() {
                 {button ? (
                   <>
                     <div className="ui icon header">
-                      <i className="user secret icon" />
-                      Find out whether a bet is sure bet or not and also, how
-                      much you should invest for maximum profit
+                      <i className="calculator icon" />
+                      Convert odds from one format to another and also to their
+                      implied propability
                     </div>
                     <button
                       className="ui primary button"
@@ -36,7 +39,8 @@ function SureBet() {
                   </>
                 ) : (
                   <>
-                    <SureBetCalc />
+                    <DecimalOdds />
+                    <Propability />
                     <button
                       className="ui primary button zIndex"
                       onClick={showComponent}
@@ -51,9 +55,9 @@ function SureBet() {
         </div>
       </div>
       {/* <DecimalOdds />
-  <Propability /> */}
+      <Propability /> */}
     </>
   );
 }
 
-export default SureBet;
+export default OddsConverter;

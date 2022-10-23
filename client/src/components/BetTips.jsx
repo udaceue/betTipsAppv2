@@ -9,7 +9,7 @@ function BetTips() {
   const [response, setResponse] = useState(res);
   const [sortArg, setSortArg] = useState("All Leagues");
 
-  const ClearFilters = () => {
+  const clearFilters = () => {
     setSortArg("All Leagues");
   };
 
@@ -52,7 +52,7 @@ function BetTips() {
             <Tips
               response={response}
               sorting={sortArg}
-              ClearFilters={ClearFilters}
+              ClearFilters={clearFilters}
             />
          
         </div>

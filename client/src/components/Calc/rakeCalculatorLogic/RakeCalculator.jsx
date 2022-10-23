@@ -1,6 +1,6 @@
 /* eslint-disable react/button-has-type */
 import { useState } from "react";
-import TwowayRake from "./rakeCalculator/TwowayRake";
+import TwowayRake from "./TwowayRake";
 
 function RakeCalculator() {
   const [button, setButton] = useState("true");

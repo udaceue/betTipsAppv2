@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import HeaderUseage from "./HeaderUseage";
+import HeaderUseage from "../components/HeaderUseage";
 import logo from "../assets/photos/logo.png";
 import { Link } from "react-router-dom";
 
