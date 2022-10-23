@@ -1,6 +1,7 @@
 /* eslint-disable react/button-has-type */
 import { useState } from "react";
 import TwowayRake from "./TwowayRake";
+import ShowToolButton from "../ShowToolButton";
 
 function RakeCalculator() {
   const [button, setButton] = useState("true");
@@ -27,9 +28,9 @@ function RakeCalculator() {
                     Convert odds from one format to another and also to their
                     implied propability
                   </div>
-                  <button className="ui primary button" onClick={showComponent}>
-                    Show Tool
-                  </button>
+                  
+                  <ShowToolButton showComponent={showComponent}/>
+
                 </>
               ) : (
                 <>

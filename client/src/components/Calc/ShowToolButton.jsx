@@ -1,8 +1,10 @@
 import React from 'react'
 
-function ShowToolButton() {
+function ShowToolButton(props) {
   return (
-    <div>ShowToolButton</div>
+    <button className="ui primary button" onClick={props.showComponent}>
+    Show Tool
+    </button>
   )
 }
 
