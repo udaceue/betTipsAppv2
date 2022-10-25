@@ -7,7 +7,6 @@ import DropdownFlags from "./DropdownFlags";
 function BetTips() {
   const [response, setResponse] = useState(res);
   const [sortArg, setSortArg] = useState("All Leagues");
-
   const clearFilters = () => {
     setSortArg("All Leagues");
   };
@@ -35,6 +34,7 @@ function BetTips() {
           sortingAlg={(word) => {
             setSortArg(word);
           }}
+          countryName = {sortArg}
         />
         <div className="ui fluid container test">
           <div className="ui fluid container">
