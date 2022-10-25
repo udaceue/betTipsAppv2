@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import RequestLeagues from "./utils/RequestLeagues";
 import getUniqueCountries from "./utils/GetUniqueCountries";
@@ -12,11 +11,10 @@ function DropdownFlags(props) {
   const { events } = response;
   console.log(events)
 
-
   const { leagues, setLeagues } = useState;
 
-
   <RequestLeagues leagues={leagues} setLeagues={setLeagues} />
+
 
   useEffect(() => {
       <RequestLeagues leagues={leagues} setLeagues={setLeagues}/>
@@ -47,9 +45,9 @@ function DropdownFlags(props) {
   const flagsTest = getUniqueFlags();
   console.log(flagsTest)
 
- 
+
   const sortedArr = getUniqueCountries().sort();
-  
+  const sortedArr = getOptions().sort();
 
 
   return (
