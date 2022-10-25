@@ -219,6 +219,12 @@ i.icon.exchange.alternate {
   font-weight: 800;
 }
 
+.ui.column.country.hide img{
+  margin-left: 5px;
+  position: absolute;
+  bottom:15px
+}
+
 /* dropdownMenu */
 select {
   width: 100%;

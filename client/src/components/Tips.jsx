@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { SVGFlag } from 'use-flags'
+
+
 
 function Tips(props) {
   const { response, sorting } = props;
@@ -16,6 +19,8 @@ function Tips(props) {
     );
   }, [sorting]);
 
+
+  
   return (
     <>
       <button className="clearFilters" onClick={props.clearFilters}>
@@ -29,10 +34,12 @@ function Tips(props) {
           const { name: awayTeamName } = awayTeam;
           const { category } = tournament;
           const { name: leagueName } = tournament;
-          const { name: countryName } = category;
+          const { name: countryName, alpha2 } = category;
           return (
             <div key={id} className="ui six column centered grid">
-              <div className="ui column country hide">{countryName}</div>
+              <div className="ui column country hide">{countryName}
+              <SVGFlag country={`${alpha2}`.toLocaleLowerCase()} flagWidth='35'/>
+              </div>
               <div className="ui column league hide">{leagueName}</div>
               <div className="ui column homeTeam">{homeTeamName}</div>
               <div className="ui column versus"> VS </div>

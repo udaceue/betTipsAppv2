@@ -1,24 +1,26 @@
 import React, { useState, useEffect } from "react";
+import RequestLeagues from "./utils/RequestLeagues";
+import getUniqueCountries from "./utils/GetUniqueCountries";
+
+ 
+
+
 
 function DropdownFlags(props) {
   const { response } = props;
   const { events } = response;
+  console.log(events)
 
   const { leagues, setLeagues } = useState;
 
-  function requestLeagues() {
-    fetch(leagues, {}).then((responsik) => {
-      responsik.json().then((data) => {
-        setLeagues(data);
-      });
-    });
-  }
+  <RequestLeagues leagues={leagues} setLeagues={setLeagues} />
+
 
   useEffect(() => {
-    requestLeagues();
+      <RequestLeagues leagues={leagues} setLeagues={setLeagues}/>
   }, []);
 
-  const getOptions = () => {
+  const getUniqueCountries = () => {
     const countries = events.map(
       ({
         tournament: {
@@ -29,7 +31,8 @@ function DropdownFlags(props) {
     return [...new Set(countries)];
   };
 
-  const getOptionss = () => {
+  
+  const getUniqueFlags = () => {
     const flags = events.map((element) => {
       const { tournament } = element;
       const { category } = tournament;
@@ -39,9 +42,13 @@ function DropdownFlags(props) {
     return [...new Set(flags)];
   };
 
-  const flagsTest = getOptionss();
+  const flagsTest = getUniqueFlags();
+  console.log(flagsTest)
 
+
+  const sortedArr = getUniqueCountries().sort();
   const sortedArr = getOptions().sort();
+
 
   return (
     <div className="ui fluid container test">
