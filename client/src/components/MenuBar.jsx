@@ -1,26 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuLink from "./utils/MenuLinks"
 
 function MenuBar() {
   return (
     <nav>
       <div className="ui attached stackable menu">
         <div className="ui fluid container">
-          <Link className="item" to="/">
-            <i className="home icon" />
-            Home
-          </Link>
 
-          <Link className="item" to="/BetTips">
-            <i className="gamepad icon" />
-            BetTips
-          </Link>
-
-          <Link className="item" to="/Tools">
-            <i className="wrench icon" />
-            Tools
-          </Link>
+          <MenuLink name = "Home" to = "/" icon = "home icon"/>
+          <MenuLink name = "BetTips" to = "/BetTips" icon = "gamepad icon"/>
+          <MenuLink name = "Tools" to = "/Tools" icon = "wrench icon" />
 
           <div className="ui simple dropdown item">
             <i className="star icon" />
@@ -63,10 +54,8 @@ function MenuBar() {
           </div>
 
           <div className="item">
-            <Link className="item" to="/Login">
-              <i className="sign in alternate icon" />
-              Login{" "}
-            </Link>
+
+            <MenuLink name = "Login" to = "/Login" icon = "sign in alternate icon" />
           </div>
         </div>
       </div>

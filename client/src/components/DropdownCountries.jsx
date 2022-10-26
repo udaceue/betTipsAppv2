@@ -4,7 +4,7 @@ import RequestLeagues from "./utils/RequestLeagues";
 
 
 
-function DropdownFlags(props) {
+function DropdownCountries(props) {
   const { response } = props;
   const { events } = response;
   console.log(events);
@@ -60,7 +60,6 @@ function DropdownFlags(props) {
       props.sortingAlg(e.target.value)}}>
         <option value="All Leagues">{option}</option>
       
-        {console.log(props.sortingAlg)}
         {sortedArr.map((country) => (
           <option key={country} value={country}>
             {country}
@@ -71,4 +70,4 @@ function DropdownFlags(props) {
   );
 }
 
-export default DropdownFlags;
+export default DropdownCountries;

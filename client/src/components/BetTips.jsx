@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import HeaderUseage from "./HeaderUseage";
+import HeaderWithMenu from "./HeaderWithMenu";
 import res from "../data/response.json";
 import Tips from "./Tips";
-import DropdownFlags from "./DropdownFlags";
+import DropdownCountries from "./DropdownCountries";
+import TipsColumnsLayout from "../layouts/TipsColumnsLayout"
 
 function BetTips() {
   const [response, setResponse] = useState(res);
@@ -14,7 +15,7 @@ function BetTips() {
   return (
     <div className="ui fluid container">
       <div className="ui fluid container">
-        <HeaderUseage />
+        <HeaderWithMenu />
       </div>
 
       <div className="ui fluid container">
@@ -29,7 +30,7 @@ function BetTips() {
         </h2>
       </div>
       <div className="ui fluid container noCss" id="test2">
-        <DropdownFlags
+        <DropdownCountries
           response={response}
           sortingAlg={(word) => {
             setSortArg(word);
@@ -37,16 +38,7 @@ function BetTips() {
           countryName = {sortArg}
         />
         <div className="ui fluid container test">
-          <div className="ui fluid container">
-            <div className="ui six column centered grid tipsColumn">
-              <div className="ui column country stroke hide">Country</div>
-              <div className="ui column league stroke hide">League</div>
-              <div className="ui column homeTeam stroke">HomeTeam</div>
-              <div className="ui column versus stroke"> Versus </div>
-              <div className="ui column awayTeam stroke">AwayTeam</div>
-              <div className="ui column ourTip stroke">Tip</div>
-            </div>
-          </div>
+            <TipsColumnsLayout />
           <Tips
             response={response}
             sorting={sortArg}

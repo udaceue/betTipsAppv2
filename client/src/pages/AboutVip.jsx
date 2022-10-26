@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderUseage from "../components/HeaderUseage";
+import HeaderWithMenu from "../components/HeaderWithMenu";
 import vip from "../assets/photos/vip.png";
 
 function AboutVip() {
   return (
     <div className="ui fluid container">
       <div className="ui fluid container">
-        <HeaderUseage />
+        <HeaderWithMenu />
       </div>
       <div className="ui center aligned fluid container toolsContent">
         <h2 className="ui icon header vipHeaderList">
