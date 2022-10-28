@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/photos/logo.png";
 
-function Header() {
+function HeaderAndLogo() {
   return (
     <div className="ui grid">
       <Link to="/">
@@ -20,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderAndLogo;

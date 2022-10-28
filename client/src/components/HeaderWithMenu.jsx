@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./HeaderAndLogo";
 import MenuBar from "./MenuBar";
 
-function BetTips() {
+function HeaderWithMenu() {
   return (
     <header>
       <Header />
@@ -11,4 +11,4 @@ function BetTips() {
   );
 }
 
-export default BetTips;
+export default HeaderWithMenu;

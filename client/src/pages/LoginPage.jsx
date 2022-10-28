@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import HeaderUseage from "../components/HeaderUseage";
+import HeaderWithMenu from "../components/HeaderWithMenu";
 import logo from "../assets/photos/logo.png";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ function LoginPage() {
   return (
     <div className="ui fluid container">
       <div className="ui fluid container">
-        <HeaderUseage />
+        <HeaderWithMenu />
       </div>
 
       <div className="ui middle aligned center aligned grid">

@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import Home from "../pages/Home";
 import Tipsters from "./Tipsters";
 import items from "../data/data";
-import Header from "./Header";
-import Menu from "./MenuBar";
+import HeaderWithMenu from "./HeaderWithMenu";
 import Scores from "../data/Scores";
 
 function App() {
@@ -21,10 +20,7 @@ function App() {
   console.log(scoress);
   return (
     <div className="ui fluid container">
-      <header>
-        <Header />
-        <Menu />
-      </header>
+      <HeaderWithMenu />
 
       <Home />
       <Tipsters items={tipstersItems} />

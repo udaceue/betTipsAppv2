@@ -1,30 +1,20 @@
-import React, { useState, useEffect, } from "react";
+import React, { useState, useEffect } from "react";
 import RequestLeagues from "./utils/RequestLeagues";
- 
 
-
-
-function DropdownFlags(props) {
+function DropdownCountries(props) {
   const { response } = props;
   const { events } = response;
   console.log(events);
 
   const { leagues, setLeagues } = useState;
-  const [ option, setOption ] = useState("All Leagues");
+  const [option, setOption] = useState("All Leagues");
 
-
-
-  <RequestLeagues leagues={leagues} setLeagues={setLeagues} />
-
+  <RequestLeagues leagues={leagues} setLeagues={setLeagues} />;
 
   useEffect(() => {
-      <RequestLeagues leagues={leagues} setLeagues={setLeagues}/>
-      setOption(props.countryName)
+    <RequestLeagues leagues={leagues} setLeagues={setLeagues} />;
+    setOption(props.countryName);
   }, []);
-
-
-
-
 
   const getUniqueCountries = () => {
     const countries = events.map(
@@ -37,7 +27,6 @@ function DropdownFlags(props) {
     return [...new Set(countries)];
   };
 
-  
   const getUniqueFlags = () => {
     const flags = events.map((element) => {
       const { tournament } = element;
@@ -49,18 +38,19 @@ function DropdownFlags(props) {
   };
 
   const flagsTest = getUniqueFlags();
-  console.log(flagsTest)
+  console.log(flagsTest);
 
   const sortedArr = getUniqueCountries().sort();
 
-
   return (
     <div className="ui fluid container test">
-      <select onChange={(e) => {
-      props.sortingAlg(e.target.value)}}>
+      <select
+        onChange={(e) => {
+          props.sortingAlg(e.target.value);
+        }}
+      >
         <option value="All Leagues">{option}</option>
-      
-        {console.log(props.sortingAlg)}
+
         {sortedArr.map((country) => (
           <option key={country} value={country}>
             {country}
@@ -71,4 +61,4 @@ function DropdownFlags(props) {
   );
 }
 
-export default DropdownFlags;
+export default DropdownCountries;
