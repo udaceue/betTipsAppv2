@@ -1,6 +1,5 @@
-
 const clearFiltersFunction = (props) => {
-    props.setSortArg("All Leagues");
-  };
+  props.setSortArg("All Leagues");
+};
 
-export default clearFiltersFunction
+export default clearFiltersFunction;

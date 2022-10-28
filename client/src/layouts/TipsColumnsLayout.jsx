@@ -1,6 +1,6 @@
-function TipsColumnsLayout(){
-    return(
-      <div className="ui fluid container">
+function TipsColumnsLayout() {
+  return (
+    <div className="ui fluid container">
       <div className="ui six column centered grid tipsColumn">
         <div className="ui column country stroke hide">Country</div>
         <div className="ui column league stroke hide">League</div>
@@ -10,6 +10,6 @@ function TipsColumnsLayout(){
         <div className="ui column ourTip stroke">Tip</div>
       </div>
     </div>
-        )
-        }
-export default TipsColumnsLayout
+  );
+}
+export default TipsColumnsLayout;

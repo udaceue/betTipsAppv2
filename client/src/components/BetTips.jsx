@@ -3,7 +3,7 @@ import HeaderWithMenu from "./HeaderWithMenu";
 import res from "../data/response.json";
 import Tips from "./Tips";
 import DropdownCountries from "./DropdownCountries";
-import TipsColumnsLayout from "../layouts/TipsColumnsLayout"
+import TipsColumnsLayout from "../layouts/TipsColumnsLayout";
 
 function BetTips() {
   const [response, setResponse] = useState(res);
@@ -35,10 +35,10 @@ function BetTips() {
           sortingAlg={(word) => {
             setSortArg(word);
           }}
-          countryName = {sortArg}
+          countryName={sortArg}
         />
         <div className="ui fluid container test">
-            <TipsColumnsLayout />
+          <TipsColumnsLayout />
           <Tips
             response={response}
             sorting={sortArg}

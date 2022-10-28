@@ -20,7 +20,7 @@ function App() {
   console.log(scoress);
   return (
     <div className="ui fluid container">
-      <HeaderWithMenu/>
+      <HeaderWithMenu />
 
       <Home />
       <Tipsters items={tipstersItems} />
