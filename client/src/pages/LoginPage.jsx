@@ -3,6 +3,8 @@ import React from "react";
 import HeaderWithMenu from "../components/HeaderWithMenu";
 import logo from "../assets/photos/logo.png";
 import { Link } from "react-router-dom";
+import LoginForm from "../forms/LoginForm";
+import MenuLink from "../components/utils/MenuLinks";
 
 function LoginPage() {
   return (
@@ -22,39 +24,12 @@ function LoginPage() {
               </div>
             </h2>
           </div>
-          <form className="ui large form">
-            <div className="ui stacked segment">
-              <div className="field">
-                <div className="ui left icon input">
-                  <i className="user icon" />
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="E-mail address"
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <div className="ui left icon input">
-                  <i className="lock icon" />
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                  />
-                </div>
-              </div>
-              <div className="ui fluid large teal submit button">Login</div>
-            </div>
 
-            <div className="ui error message" />
-          </form>
+          <LoginForm />
+
           <div className="ui message">
             New to us?
-            <Link className="item" to="/SignUp">
-              {" "}
-              Sign Up
-            </Link>
+            <MenuLink name="Sign Up" to="/SignUp" />
           </div>
         </div>
       </div>

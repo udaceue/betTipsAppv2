@@ -5,10 +5,7 @@ import DropdownMenu from "./DropdownMenu";
 import vipDropdownData from "../data/vipDropdownData";
 import moreDropdownData from "../data/moreDropdownData";
 
-
 function MenuBar() {
-
-
   return (
     <nav>
       <div className="ui attached stackable menu">
