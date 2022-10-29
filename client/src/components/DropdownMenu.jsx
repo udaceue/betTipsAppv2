@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 function DropdownMenu({ dropdownData, menuName }) {
   const showLinks = () => {
     const droppedItems = dropdownData.map((el) => {

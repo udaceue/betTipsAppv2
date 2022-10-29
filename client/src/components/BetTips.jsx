@@ -37,8 +37,10 @@ function BetTips() {
           }}
           countryName={sortArg}
         />
+
         <div className="ui fluid container test">
           <TipsColumnsLayout />
+
           <Tips
             response={response}
             sorting={sortArg}
