@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderWithMenu from "../components/HeaderWithMenu";
 import logo from "../assets/photos/logo.png";
-import { Link } from "react-router-dom";
+import MenuLink from "../components/utils/MenuLinks";
 import SignUpForm from "../forms/SignUpForm";
 
 function SignUp() {
@@ -25,7 +25,7 @@ function SignUp() {
           <SignUpForm />
 
           <div className="ui message">
-            Have account already? <Link to="/Login">LogIn Here</Link>
+            Have account already? <MenuLink name="Login Here" to="/Login" />
           </div>
         </div>
       </div>

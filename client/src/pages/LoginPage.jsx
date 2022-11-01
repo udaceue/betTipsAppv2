@@ -2,7 +2,6 @@
 import React from "react";
 import HeaderWithMenu from "../components/HeaderWithMenu";
 import logo from "../assets/photos/logo.png";
-import { Link } from "react-router-dom";
 import LoginForm from "../forms/LoginForm";
 import MenuLink from "../components/utils/MenuLinks";
 
