@@ -289,6 +289,64 @@ color: #535399;
 }
 
 /* ====================
+   Tipsters Modal
+==================== */
+  .modalOverlay{
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 555;
+  }
+  .modalContainer{
+    max-width: 560px;
+    width: 100%;
+    position: fixed;
+    top:50%;
+    left:33.5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+  }
+  .modalFormWrapper{
+    width: 100%;
+  }
+  .modalContactImage{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .modalForm{
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .flexOne {
+    flex:1;
+  }
+  .closeModal{
+    font-size: 30px;
+    position: absolute;
+    top:0;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .closeModal:hover{
+    color: #535399;
+    transform: rotate(15deg);
+  }
+  .ui.form .field>label.textLabel{
+    color: #a1aeb5;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+/* ====================
     MEDIA QUERIES
 ==================== */
 
@@ -340,3 +398,38 @@ color: #535399;
     margin: auto;
   }
 }
+
+   /* Modal Form */
+   @media (max-width: 1920px) {
+    .modalContainer {
+      max-width: 560px;
+      width: 100%;
+      position: fixed;
+      top:30%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+    @media (max-width: 1920px) {
+      .ui.stacked.segment.flexOne {
+        max-width: 560px;
+        width: 100%;
+        position: fixed;
+        top:155%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+      }
+   }
+
+    @media (max-width: 520px) {
+      .modalContactImage {
+      display: none;
+      }
+      .modalContainer{
+        top:50%
+      }
+    }

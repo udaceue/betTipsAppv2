@@ -21,7 +21,6 @@ function App() {
   return (
     <div className="ui fluid container">
       <HeaderWithMenu />
-
       <Home />
       <Tipsters items={tipstersItems} />
     </div>
