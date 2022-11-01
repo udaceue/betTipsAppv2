@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/betTipsAppv2/static/css/main.5f17adab.css",
-    "main.js": "/betTipsAppv2/static/js/main.8734ee50.js",
+    "main.css": "/betTipsAppv2/static/css/main.86245488.css",
+    "main.js": "/betTipsAppv2/static/js/main.204f34d0.js",
+    "static/media/contactUs.png": "/betTipsAppv2/static/media/contactUs.203e2a5342edd4688c4c.png",
     "static/media/vip.png": "/betTipsAppv2/static/media/vip.50d14ec34f807e129189.png",
     "static/media/matthew.png": "/betTipsAppv2/static/media/matthew.a5edfa2ff7a3be49dd8f.png",
     "static/media/winnings.png": "/betTipsAppv2/static/media/winnings.bf4e8012d853c4cff14c.png",
@@ -10,11 +11,11 @@
     "static/media/logo.png": "/betTipsAppv2/static/media/logo.d7896ef21979d1752b47.png",
     "static/media/molly.png": "/betTipsAppv2/static/media/molly.0352f05070555e24aa2a.png",
     "index.html": "/betTipsAppv2/index.html",
-    "main.5f17adab.css.map": "/betTipsAppv2/static/css/main.5f17adab.css.map",
-    "main.8734ee50.js.map": "/betTipsAppv2/static/js/main.8734ee50.js.map"
+    "main.86245488.css.map": "/betTipsAppv2/static/css/main.86245488.css.map",
+    "main.204f34d0.js.map": "/betTipsAppv2/static/js/main.204f34d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f17adab.css",
-    "static/js/main.8734ee50.js"
+    "static/css/main.86245488.css",
+    "static/js/main.204f34d0.js"
   ]
 }
